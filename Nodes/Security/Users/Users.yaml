@@ -1,0 +1,89 @@
+Name: Users
+Id: g=28fa632b2dd4c48ec853386dda4ef3cf
+Type: UsersCategoryFolder
+Children:
+- Name: 'User-IT'
+  Type: UserType
+  Children:
+  - Name: Password
+    Type: Password
+    DataType: Password
+    ReferenceType: HasProperty
+    AccessLevel: Read
+    Value: ""
+    Children:
+    - Name: Hash
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      Value: 
+       {
+        "TypeId": {
+         "Id": 252,
+         "Namespace": 1
+        },
+        "Body": {
+         "Hash": [96,146,221,91,76,235,23,171,59,113,41,201,87,191,46,215,24,144,77,54,150,125,137,172,34,225,27,122,110,116,8,191],
+         "Salt": [142,67,90,20,236,68,141,232,159,99,145,203,237,183,43,246,162,54,129,209,120,45,68,105,86,32,150,155,25,187,29,39]
+        }
+       }
+    - Name: ChangeTimestamp
+      Type: PropertyType
+      DataType: UtcTime
+      AccessLevel: Read
+      Value: "2022-09-07T10:05:25.1710202"
+    - Name: History
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: []
+  - Name: LocaleId
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    Value: "it-IT"
+- Name: 'User-EN'
+  Id: g=c16ab81d75a579f5c7fb546a0edb528e
+  Type: UserType
+  Children:
+  - Name: Password
+    Type: Password
+    DataType: Password
+    ReferenceType: HasProperty
+    AccessLevel: Read
+    Value: ""
+    Children:
+    - Name: Hash
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      Value: 
+       {
+        "TypeId": {
+         "Id": 252,
+         "Namespace": 1
+        },
+        "Body": {
+         "Hash": [27,194,32,239,92,127,117,198,32,13,94,64,33,34,149,182,99,179,75,125,40,253,181,149,66,175,130,87,119,102,5,64],
+         "Salt": [64,202,145,217,233,189,100,130,94,231,122,28,252,126,170,122,11,132,38,104,92,174,199,4,67,25,141,28,23,66,2,114]
+        }
+       }
+    - Name: ChangeTimestamp
+      Type: PropertyType
+      DataType: UtcTime
+      AccessLevel: Read
+      Value: "2022-09-07T10:05:25.2183705"
+    - Name: History
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: []
+  - Name: LocaleId
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    Value: "en-US"

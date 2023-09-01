@@ -1,0 +1,45 @@
+Name: DataLogger_Variables
+Type: FolderType
+Children:
+- Name: iSin
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../NetLogic/SimulateVariables/iSin"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: iCos
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../NetLogic/SimulateVariables/iCos"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: iRamp
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../NetLogic/SimulateVariables/iRamp"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

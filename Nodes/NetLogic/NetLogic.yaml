@@ -1,0 +1,24 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- Name: SimulateVariables
+  Type: NetLogic
+  Children:
+  - Name: iSin
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 0
+  - Name: iCos
+    Id: g=8e7d019c0c1f9c8253751c240cbf58b0
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 0
+  - Name: iRamp
+    Id: g=b2526cde166342f239fc5f98bb2b1a01
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 0
+  - Name: bRunSimulation
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true

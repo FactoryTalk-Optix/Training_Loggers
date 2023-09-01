@@ -1,0 +1,485 @@
+Name: Loggers
+Type: LoggersCategoryFolder
+Children:
+- Name: DataLogger1
+  Id: g=d7f86c7fbbc10b41687511b5c75ed879
+  Type: DataLogger
+  Children:
+  - Name: SamplingMode
+    Id: g=1238c164afe435c1c068a89fb79120f8
+    Type: PropertyType
+    DataType: SamplingModeEnum
+    Value: 0
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"bf26df3ed274240e11429a62269d0a91","Namespace":20}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":15}
+  - Name: VariablesToLog
+    Type: BaseObjectType
+    Children:
+    - Name: iSin
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/DataLogger_Variables/iSin"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: iCos
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/DataLogger_Variables/iCos"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: iRamp
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/DataLogger_Variables/iRamp"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+  - Class: Reference
+    Target: ns=11;i=21
+    Direction: Forward
+  - Name: LogLocalTime
+    Type: PropertyType
+    DataType: Boolean
+    Value: true
+  - Name: SamplingPeriod
+    Id: g=46d61ed3e789612d15fb7c4edab6c910
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:1.0000000"
+- Name: EventLogger1
+  Type: EventLogger
+  Children:
+  - Name: Enabled
+    Type: PropertyType
+    DataType: Boolean
+    Value: true
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"bf26df3ed274240e11429a62269d0a91","Namespace":20}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":15}
+  - Name: EventConfigurations
+    Type: BaseObjectType
+    Children:
+    - Name: EventConfiguration1
+      Type: EventConfiguration
+      Children:
+      - Name: EventType
+        Type: NodePointer
+        DataType: NodeId
+        ReferenceType: HasProperty
+        Value: {"Id":2100}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":2041}
+      - Name: EventSource
+        Type: NodePointer
+        DataType: NodeId
+        ReferenceType: HasProperty
+        Value: {"IdType":2,"Id":"41647fbcf95a6f1dc163dc528112f910","Namespace":20}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":58}
+  - Name: EventFieldPaths
+    Type: BaseObjectType
+    Children:
+    - Name: ClientUserId
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:ClientUserId"
+    - Name: NewValue
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:NewValue"
+    - Name: OldValue
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:OldValue"
+    - Name: Time
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:Time"
+    - Name: LocalTime
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:LocalTime"
+    - Name: SourceName
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:SourceName"
+    - Name: SourceNode
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:SourceNode"
+  - Name: EventArguments
+    Type: BaseObjectType
+    Children:
+    - Name: EventTypeId
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: ClientUserId
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: NewValue
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ValueRank: Any
+    - Name: OldValue
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ValueRank: Any
+    - Name: Time
+      Type: BaseDataVariableType
+      DataType: UtcTime
+      Value: "1601-01-01T00:00:00.0000000"
+    - Name: LocalTime
+      Type: BaseDataVariableType
+      DataType: TimeZoneDataType
+      Value: 
+       {
+        "TypeId": {
+         "Id": 8912
+        },
+        "Body": {
+         "offset": 0,
+         "daylightSavingInOffset": false
+        }
+       }
+    - Name: SourceName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: SourceNode
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EventFieldsToLog
+    Type: BaseObjectType
+    Children:
+    - Name: Time
+      Type: EventFieldToLog
+      DataType: UtcTime
+      Value: "1601-01-01T00:00:00.0000000"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/Time"
+    - Name: LocalTime
+      Type: EventFieldToLog
+      DataType: DateTime
+      Value: "1601-01-01T00:00:00.0000000"
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}+{1}"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../EventArguments/LocalTime"
+        - Name: ns=3;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../EventArguments/Time"
+    - Name: ClientUserId
+      Type: EventFieldToLog
+      DataType: String
+      Value: ""
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/ClientUserId"
+    - Name: SourceName
+      Type: EventFieldToLog
+      DataType: String
+      Value: ""
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/SourceName"
+    - Name: SourceNode
+      Type: EventFieldToLog
+      DataType: String
+      Value: ""
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/SourceNode@BrowseName"
+    - Name: NewValue
+      Type: EventFieldToLog
+      DataType: Int32
+      ValueRank: Any
+      Value: 0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/NewValue"
+    - Name: OldValue
+      Type: EventFieldToLog
+      DataType: Int32
+      ValueRank: Any
+      Value: 0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/OldValue"
+- Name: EventLogger2
+  Type: EventLogger
+  Children:
+  - Name: Enabled
+    Type: PropertyType
+    DataType: Boolean
+    Value: true
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"bf26df3ed274240e11429a62269d0a91","Namespace":20}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":15}
+  - Name: EventConfigurations
+    Type: BaseObjectType
+    Children:
+    - Name: EventConfiguration1
+      Type: EventConfiguration
+      Children:
+      - Name: EventType
+        Type: NodePointer
+        DataType: NodeId
+        ReferenceType: HasProperty
+        Value: {"Id":215,"Namespace":1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":2041}
+  - Name: EventFieldPaths
+    Type: BaseObjectType
+    Children:
+    - Name: LocalTime
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:LocalTime"
+    - Name: SourceName
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:SourceName"
+    - Name: Time
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:Time"
+    - Name: SourceNode
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:SourceNode"
+    - Name: ClientUserId
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:ClientUserId"
+  - Name: EventArguments
+    Type: BaseObjectType
+    Children:
+    - Name: EventTypeId
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: LocalTime
+      Type: BaseDataVariableType
+      DataType: TimeZoneDataType
+      Value: 
+       {
+        "TypeId": {
+         "Id": 8912
+        },
+        "Body": {
+         "offset": 0,
+         "daylightSavingInOffset": false
+        }
+       }
+    - Name: SourceName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: Time
+      Type: BaseDataVariableType
+      DataType: UtcTime
+      Value: "1601-01-01T00:00:00.0000000"
+    - Name: SourceNode
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: ClientUserId
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+  - Name: EventFieldsToLog
+    Type: BaseObjectType
+    Children:
+    - Name: Time
+      Type: EventFieldToLog
+      DataType: UtcTime
+      Value: "1601-01-01T00:00:00.0000000"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/Time"
+    - Name: LocalTime
+      Type: EventFieldToLog
+      DataType: DateTime
+      Value: "1601-01-01T00:00:00.0000000"
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}+{1}"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../EventArguments/LocalTime"
+        - Name: ns=3;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../EventArguments/Time"
+    - Name: SourceName
+      Type: EventFieldToLog
+      DataType: String
+      Value: ""
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/SourceName"
+    - Name: SourceNode
+      Type: EventFieldToLog
+      DataType: String
+      Value: ""
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/SourceNode@BrowseName"
+    - Name: ClientUserId
+      Type: EventFieldToLog
+      DataType: String
+      Value: ""
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/ClientUserId"

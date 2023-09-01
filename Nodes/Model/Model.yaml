@@ -1,0 +1,10 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: EventLoggerGridFilter
+  Id: g=01fa41d49bca477699a51483013caceb
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "SELECT * FROM \"EventLogger1\""
+- File: Audit_Variables/Audit_Variables.yaml
+- File: DataLogger_Variables/DataLogger_Variables.yaml

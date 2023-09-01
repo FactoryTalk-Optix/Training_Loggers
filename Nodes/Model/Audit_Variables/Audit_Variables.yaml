@@ -1,0 +1,19 @@
+Name: Audit_Variables
+Id: g=41647fbcf95a6f1dc163dc528112f910
+Type: FolderType
+Children:
+- Name: Variable1
+  Id: g=0e6479006eeb4b396f64bdeb87c6c28e
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable2
+  Id: g=15b5469922ee368d1d30fd2c077f0efb
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable3
+  Id: g=c462210d88ed938f32a71c16401f9e5c
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
